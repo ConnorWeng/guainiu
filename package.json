@@ -4,7 +4,7 @@
   "private": true,
   "description": "for lovely niu",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www.js"
   },
   "dependencies": {
     "express": "~4.2.0",
