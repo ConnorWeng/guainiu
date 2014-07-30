@@ -8,13 +8,16 @@ a {
 
 .main {
   width: 1200px;
-  height: 640px;
+  height: 800px;
   margin: 0 auto;
   background: url(../images/background.png);
 }
 
 .video {
-  top: 320px;
-  left: 400px;
+  top: 360px;
+  left: 420px;
+  background: red;
+  width: 400px;
+  height: 200px;
   position: absolute;
 }
