@@ -27,6 +27,7 @@ h1 {
   top: 220px;
   left: 360px;
   width: 400px;
+  background: white;
   height: 200px;
   position: relative;
 }
