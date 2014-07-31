@@ -16,9 +16,10 @@ router.post('/inc', function(req, res) {
 });
 
 router.get('/', function(req, res) {
-    client.get('like:count', function (err, reply) {
-        res.send('count:' + reply.toString());
-    });
+    res.send('haha');
+    // client.get('like:count', function (err, reply) {
+    //     res.send('count:' + reply.toString());
+    // });
 });
 
 module.exports = router;
