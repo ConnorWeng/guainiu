@@ -10,7 +10,9 @@ client.on('error', function (err) {
 client.auth('dOWdHb6VXq210YcFLwx5OLBU-Vl6eZEtSa1e9eGq1VOZDv17HQzU7yRB1-mwXJaYohdbMIWwJSAcHa');
 
 router.post('/inc', function(req, res) {
-    client.incr('like:count');
+    client.incr('like:count', function (err, reply) {
+        res.send('ok');
+    });
 });
 
 router.get('/', function(req, res) {
