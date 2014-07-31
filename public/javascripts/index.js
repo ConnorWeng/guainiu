@@ -7,7 +7,7 @@ $(function () {
     });
 
     var updateCount = function () {
-        $.get('/like', function (data) {
+        $.get('/like/', function (data) {
             console.log('update:' + data);
             $('#like-count').val(data);
         });
