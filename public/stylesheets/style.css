@@ -15,9 +15,9 @@ a {
 
 .video {
   top: 360px;
-  left: 420px;
+  left: 360px;
   background: red;
   width: 400px;
   height: 200px;
-  position: absolute;
+  position: relative;
 }
