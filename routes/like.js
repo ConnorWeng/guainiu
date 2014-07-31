@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var redis = require('redis');
-var client = redis.createClient(80, 'redis.duapp.com');
+var redisOptions = {'no_ready_check': true};
+var client = redis.createClient(80, 'redis.duapp.com', redisOptions);
 
 client.on('error', function (err) {
     console.log('Error:' + err);
@@ -16,10 +17,9 @@ router.post('/inc', function(req, res) {
 });
 
 router.get('/', function(req, res) {
-    res.send('haha');
-    // client.get('like:count', function (err, reply) {
-    //     res.send('count:' + reply.toString());
-    // });
+    client.get('like:count', function (err, reply) {
+        res.send(reply.toString());
+    });
 });
 
 module.exports = router;
