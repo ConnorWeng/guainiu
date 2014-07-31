@@ -2,5 +2,19 @@ extends layout
 
 block content
   #container.main
+    #desc.desc
+      p
+        当前已有
+        input#like-count(disabled=true)
+        个支持
+      p
+        如果你支持我，请点击
+        input.like(type='button', value='支持')
+      p
+        如果你不支持，也只能点击
+        input.like(type='button', value='支持')
+      h1
+        给她一个不能拒绝的理由
     #video.video
       <iframe height=320 width=400 src="http://player.youku.com/embed/XNjk0MDMwODQ0" frameborder=0 allowfullscreen></iframe>
+  script(type='text/javascript', src='/javascripts/index.js')
